@@ -1,3 +1,10 @@
+# solidarity:world maps
+
+```shell
+git remote add template git@github.com:workadventure/map-starter-kit.git
+git merge template/master --allow-unrelated-histories
+```
+
 # WorkAdventure Map Starter Kit
 
 ![office map thumbnail](./office.png)
