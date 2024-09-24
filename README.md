@@ -1,3 +1,11 @@
+# solidarity:world maps
+
+```shell
+git remote add template git@github.com:workadventure/map-starter-kit.git
+git merge template/master --allow-unrelated-histories
+```
+
+# WorkAdventure Map Starter Kit
 # 🗺️ WorkAdventure Map Starter Kit
 
 <a href="https://discord.gg/G6Xh9ZM9aR" target="blank"><img src="https://img.shields.io/discord/821338762134290432.svg?style=flat&label=Join%20Community&color=7289DA" alt="Join Community Badge"/></a>
