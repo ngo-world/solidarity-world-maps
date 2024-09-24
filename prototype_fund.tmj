@@ -549,22 +549,22 @@
         {
          "name":"mapCopyright",
          "type":"string",
-         "value":"Credits: WorkAdventure (https:\/\/WorkAdventu.re) \nLicense: CC-BY-SA 3.0 (http:\/\/creativecommons.org\/licenses\/by-sa\/3.0\/)"
+         "value":""
         }, 
         {
          "name":"mapDescription",
          "type":"string",
-         "value":"A perfect virtual office to get started with WorkAdventure!"
+         "value":"A test map"
         }, 
         {
          "name":"mapImage",
          "type":"string",
-         "value":"office.png"
+         "value":"prototype_fund.png"
         }, 
         {
          "name":"mapName",
          "type":"string",
-         "value":"Office"
+         "value":"prototype:fund"
         }, 
         {
          "name":"script",
