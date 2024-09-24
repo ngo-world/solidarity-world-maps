@@ -1,7 +1,10 @@
 # solidarity:world maps
 
+Adapted from the [workadventure/map-starter-kit](https://github.com/workadventure/map-starter-kit).
+
 ```shell
 git remote add template git@github.com:workadventure/map-starter-kit.git
+git fetch --all
 git merge template/master --allow-unrelated-histories
 ```
 
