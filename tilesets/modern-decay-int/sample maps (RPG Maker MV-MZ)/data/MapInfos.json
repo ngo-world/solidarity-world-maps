@@ -1,0 +1,15 @@
+[
+null,
+{"id":1,"expanded":false,"name":"house","order":1,"parentId":0,"scrollX":856,"scrollY":490.5},
+null,
+null,
+{"id":4,"expanded":false,"name":"arcade","order":2,"parentId":0,"scrollX":819,"scrollY":461.5},
+null,
+null,
+null,
+{"id":8,"expanded":false,"name":"clothing store","order":3,"parentId":0,"scrollX":819,"scrollY":461.5},
+null,
+{"id":10,"expanded":false,"name":"grocery","order":4,"parentId":0,"scrollX":819,"scrollY":461.5},
+{"id":11,"expanded":false,"name":"pub","order":5,"parentId":0,"scrollX":819,"scrollY":461.5},
+{"id":12,"expanded":false,"name":"bakery","order":6,"parentId":0,"scrollX":728,"scrollY":410.22222222222223}
+]

@@ -1,0 +1,52 @@
+{
+    "activeFile": "Word Board Black.tmx",
+    "expandedProjectPaths": [
+    ],
+    "file.lastUsedOpenFilter": "All Files (*)",
+    "fileStates": {
+        "TDTile-Black-64x64.tsx": {
+            "scaleInDock": 1
+        },
+        "TDTile-Blank-64x64.tsx": {
+            "scaleInDock": 1
+        },
+        "TDTile-White-64x64.tsx": {
+            "scaleInDock": 1
+        },
+        "Word Board Black.tmx": {
+            "scale": 0.8945833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 508.61667442943656,
+                "y": 478.43502561714024
+            }
+        },
+        "Word Board Blank.tmx": {
+            "scale": 0.8945833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 952.398695854681,
+                "y": 708.7098276665115
+            }
+        },
+        "Word Board White.tmx": {
+            "scale": 0.8945833333333333,
+            "selectedLayer": 0,
+            "viewCenter": {
+                "x": 953.5165346995809,
+                "y": 709.8276665114114
+            }
+        }
+    },
+    "openFiles": [
+        "Word Board Black.tmx",
+        "Word Board Blank.tmx",
+        "Word Board White.tmx"
+    ],
+    "project": "Top Down Boards.tiled-project",
+    "recentFiles": [
+        "Word Board White.tmx",
+        "Word Board Blank.tmx",
+        "Word Board Black.tmx"
+    ]
+}
