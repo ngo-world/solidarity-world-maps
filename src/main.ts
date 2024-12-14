@@ -20,7 +20,21 @@ WA.onInit().then(() => {
     WA.room.area.onLeave('clock').subscribe(closePopup)
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
-    bootstrapExtra().then(() => {
+    bootstrapExtra().then(async () => {
+        const myWebsite = await WA.ui.website.open({
+            url: "https://wikipedia.org",
+            position: {
+                vertical: "middle",
+                horizontal: "middle",
+            },
+            size: {
+                height: "50vh",
+                width: "50vw",
+            },
+        });
+        
+        myWebsite.position.vertical = "top";
+
         console.log('Scripting API Extra ready');
     }).catch(e => console.error(e));
 
