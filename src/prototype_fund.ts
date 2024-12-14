@@ -19,6 +19,18 @@ WA.onInit().then(() => {
         });
     }
 
+    WA.controls.disableMapEditor();
+    WA.controls.disableInviteButton();
+    
+    // WA.controls.disableRightClick();
+    WA.controls.disableScreenSharing();
+    // ToDo
+    WA.controls.disableWheelZoom();
+    WA.controls.disableRoomList();
+
+    WA.controls.disableMicrophone();
+    WA.controls.disableWebcam();
+
 
     console.log('Scripting API ready');
     console.log('Player tags: ', WA.player.tags)
