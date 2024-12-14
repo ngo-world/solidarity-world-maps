@@ -21,15 +21,23 @@ WA.onInit().then(() => {
 
     // The line below bootstraps the Scripting API Extra library that adds a number of advanced properties/features to WorkAdventure
     bootstrapExtra().then(async () => {
+        setInterval(async () => {
+            await WA.players.configureTracking();
+            const players = WA.players.list();
+            console.log(players);
+        }, 1000);
         const myWebsite = await WA.ui.website.open({
-            url: "https://wikipedia.org",
+            url: `https://127.0.0.1:8080?userId=${WA.player.playerId}`,
+            allowApi: true,
+            // ToDo
+            allowPolicy: 'microphone',
             position: {
-                vertical: "middle",
-                horizontal: "middle",
+                vertical: "bottom",
+                horizontal: "right",
             },
             size: {
-                height: "50vh",
-                width: "50vw",
+                height: "30vh",
+                width: "30vw",
             },
         });
         
