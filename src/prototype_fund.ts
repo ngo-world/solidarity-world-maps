@@ -31,7 +31,6 @@ WA.onInit().then(() => {
     WA.controls.disableMicrophone();
     WA.controls.disableWebcam();
 
-
     console.log('Scripting API ready');
     console.log('Player tags: ', WA.player.tags)
     bootstrapExtra().then(async () => {
