@@ -488,7 +488,7 @@
         {
          "name":"mapName",
          "type":"string",
-         "value":"Conference"
+         "value":"Scenario1_BeCorrect"
         }, 
         {
          "name":"script",
