@@ -34,7 +34,6 @@ WA
         console.log('Scripting API ready');
         console.log('Player tags: ', WA.player.tags)
         await WA.player.state.saveVariable('smartphoneShown', false);
-        openSmartphone();
 
         WA.ui.actionBar.addButton({
             id: 'toggleSmartPhoneButton',
@@ -43,6 +42,13 @@ WA
                 WA.player.state.saveVariable('smartphoneShown', !WA.player.state['smartphoneShown']);
             }
         });
+
+        setInterval(async () => {
+            const website = (await WA.ui.website.getAll()).find(x => x.url.endsWith('/smartphone'));
+            if (!website) {
+                openSmartphone();
+            }
+        }, 100);
 
         await openSmartphone();
     })
@@ -56,19 +62,19 @@ async function openSmartphone() {
         // ToDo
         allowPolicy: 'microphone',
         position: {
-            vertical: "bottom",
+            vertical: "middle",
             horizontal: "right",
         },
         size: {
-            height: "530px",
-            width: "235px",
+            height: "620px",
+            width: "300px",
         },
     });
 }
 
 function getRandomPhoneNumber() {
-    const min = 100000000;
-    const max = 999999999;
+    const min = 330000000;
+    const max = 509999999;
     const randomNumber = Math.floor(Math.random() * (max - min) + min);
     return `+${randomNumber}`;
 }
