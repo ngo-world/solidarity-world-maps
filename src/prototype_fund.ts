@@ -1,63 +1,57 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
-
-var smartphone: UIWebsite | null = null;
 
 console.log('Script started successfully');
 
-// Waiting for the API to be ready
-WA.onInit().then(() => {
-    if (!WA.player.state.hasVariable("phoneNumber")) {
-        const phoneNumber = getRandomPhoneNumber();
-        console.info(`Saving random phone number: ${phoneNumber}`);
-        WA.player.state.saveVariable("phoneNumber", phoneNumber, {
-            public: true,
-            persist: true,
-            scope: "world"
-        });
-    }
 
-    WA.controls.disableMapEditor();
-    WA.controls.disableInviteButton();
-    
-    // WA.controls.disableRightClick();
-    WA.controls.disableScreenSharing();
-    // ToDo
-    WA.controls.disableWheelZoom();
-    WA.controls.disableRoomList();
+WA
+    .onInit()
+    .then(async () => await bootstrapExtra())
+    .then(async () => {
+        if (!WA.player.state.hasVariable("phoneNumber")) {
+            const phoneNumber = getRandomPhoneNumber();
+            console.info(`Saving random phone number: ${phoneNumber}`);
+            WA.player.state.saveVariable("phoneNumber", phoneNumber, {
+                public: true,
+                persist: true,
+                scope: "world"
+            });
+        }
 
-    WA.controls.disableMicrophone();
-    WA.controls.disableWebcam();
+        WA.controls.disableMapEditor();
+        WA.controls.disableInviteButton();
 
-    console.log('Scripting API ready');
-    console.log('Player tags: ', WA.player.tags)
-    bootstrapExtra().then(async () => {
+        // WA.controls.disableRightClick();
+        WA.controls.disableScreenSharing();
+        // ToDo
+        WA.controls.disableWheelZoom();
+        WA.controls.disableRoomList();
+
+        WA.controls.disableMicrophone();
+        WA.controls.disableWebcam();
+
+        console.log('Scripting API ready');
+        console.log('Player tags: ', WA.player.tags)
+        await WA.player.state.saveVariable('smartphoneShown', false);
+        openSmartphone();
+
         WA.ui.actionBar.addButton({
             id: 'toggleSmartPhoneButton',
             label: 'Toggle smartphone',
-            callback: (_) => {
-                toggleSmartphone();
+            callback: async (_) => {
+                WA.player.state.saveVariable('smartphoneShown', !WA.player.state['smartphoneShown']);
             }
         });
-    }).catch(e => console.error(e));
 
-}).catch(e => console.error(e));
-
-
-async function toggleSmartphone() {
-    if (!smartphone) {
         await openSmartphone();
-    } else {
-        await (smartphone as unknown as UIWebsite).close();
-        smartphone = null;
-    }
-}
+    })
+    .catch(e => console.error(e));;
+
 
 async function openSmartphone() {
-    smartphone = await WA.ui.website.open({
-        url: `https://127.0.0.1:4200?userId=${WA.player.playerId}`,
+    await WA.ui.website.open({
+        url: "https://127.0.0.1:4200/smartphone",
         allowApi: true,
         // ToDo
         allowPolicy: 'microphone',
