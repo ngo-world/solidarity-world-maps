@@ -57,7 +57,7 @@ WA
 
 async function openSmartphone() {
     await WA.ui.website.open({
-        url: "https://127.0.0.1:4200/smartphone",
+        url: "https://aws-load-balancer.solidarity-world.de/smartphone",
         allowApi: true,
         // ToDo
         allowPolicy: 'microphone',
