@@ -936,7 +936,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"ukraine.wam#fromground"
+                         "value":"retroisland.wam#fromground"
                         }],
                  "type":"tilelayer",
                  "visible":true,
@@ -1251,9 +1251,9 @@
                  "opacity":1,
                  "properties":[
                         {
-                         "name":"startLayer",
-                         "type":"bool",
-                         "value":true
+                         "name":"start",
+                         "type":"string",
+                         "value":"fromground"
                         }],
                  "type":"tilelayer",
                  "visible":true,
