@@ -936,7 +936,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"retroisland.wam#fromground"
+                         "value":"Ukraine.wam#fromground"
                         }],
                  "type":"tilelayer",
                  "visible":true,
