@@ -1,16 +1,12 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-import { bootstrapExtra } from "@workadventure/scripting-api-extra";
+import {ActionMessage} from "@workadventure/iframe-api-typings";
 
 console.log('Script started successfully');
 
 // Waiting for the API to be ready
 WA.onInit().then(() => {
-    console.log('Scripting API ready');
-    console.log('Player tags: ',WA.player.tags)
-    bootstrapExtra().then(async () => {
-    }).catch(e => console.error(e));
-}).catch(e => console.error(e));
+  let actionMessage: ActionMessage | undefined;
 
   // When someone enters the bellZone area
   WA.room.area.onEnter("bellZone").subscribe(() => {
