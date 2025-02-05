@@ -7,8 +7,10 @@
     "dev": "vite",
     "start": "vite",
     "build": "tsc && vite build",
+    "build:prototype_fund": "tsc && vite build -- --map='./prototype_fund.tmj'",
     "prod": "vite preview",
     "upload": "npm run build && upload-wa-map",
+    "upload:prototype_fund": "npm run build:prototype_fund && upload-wa-map",
     "upload-only": "upload-wa-map"
   },
   "devDependencies": {

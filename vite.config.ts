@@ -2,7 +2,17 @@ import 'dotenv/config';
 import { defineConfig } from "vite";
 import { getMaps, getMapsOptimizers, getMapsScripts, LogLevel, OptimizeOptions } from "wa-map-optimizer-vite";
 
+const onlyMap = process.argv.find(i => i.startsWith('--map='));
+
 const maps = getMaps();
+if (onlyMap != null) {
+    for (let k of maps.keys()) {
+        if (k != onlyMap.split('=')[1]) {
+          maps.delete(k);
+        }
+      }
+}
+
 
 let optimizerOptions: OptimizeOptions = {
     logs: process.env.LOG_LEVEL && process.env.LOG_LEVEL in LogLevel ? LogLevel[process.env.LOG_LEVEL] : LogLevel.NORMAL,
