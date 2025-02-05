@@ -421,6 +421,12 @@
                  "height":39.6969696969697,
                  "id":17,
                  "name":"clock",
+                 "properties":[
+                        {
+                         "name":"openWebsite",
+                         "type":"string",
+                         "value":"https:\/\/docs.google.com\/document\/d\/19z8MA5nRSaIG58zmJGgqwlB3aAqIkqsdCRe6heZBCT0\/edit?usp=sharing&rm=minimal"
+                        }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
@@ -542,7 +548,7 @@
          "x":0,
          "y":0
         }],
- "nextlayerid":63,
+ "nextlayerid":64,
  "nextobjectid":20,
  "orientation":"orthogonal",
  "properties":[
