@@ -6,8 +6,9 @@ const solidarityWorldUrl = "https://127.0.0.1:4200"
 import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
-console.log('Script started successfully');
+const ADMIN_UUIDS: string[] = ['info@davidgengenbach.de'];
 
+console.log('Script started successfully');
 
 WA
     .onInit()
@@ -23,20 +24,20 @@ WA
             });
         }
 
-        WA.controls.disableMapEditor();
-        WA.controls.disableInviteButton();
+        if (!currentUserIsAdmin()) {
+            WA.controls.disableMapEditor();
+            WA.controls.disableInviteButton();
+            WA.controls.disableScreenSharing();
+            WA.controls.disableWheelZoom();
+            WA.controls.disableRoomList();
+            
+            // WA.controls.disableRightClick();
+            // WA.controls.disableMicrophone();
+            // WA.controls.disableWebcam();
+        }
 
-        // WA.controls.disableRightClick();
-        WA.controls.disableScreenSharing();
-        // ToDo
-        WA.controls.disableWheelZoom();
-        WA.controls.disableRoomList();
 
-        WA.controls.disableMicrophone();
-        WA.controls.disableWebcam();
 
-        console.log('Scripting API ready');
-        console.log('Player tags: ', WA.player.tags)
         await WA.player.state.saveVariable('smartphoneShown', false);
 
         WA.ui.actionBar.addButton({
@@ -47,11 +48,13 @@ WA
             }
         });
 
-        WA.ui.actionBar.addButton({
-            id: 'openAdminDashboard',
-            label: 'Open admin dashboard',
-            callback: openAdminDashboard
-        });
+        if (currentUserIsAdmin()) {
+            WA.ui.actionBar.addButton({
+                id: 'openAdminDashboard',
+                label: 'Open admin dashboard',
+                callback: openAdminDashboard
+            });
+        }
 
         setInterval(async () => {
             if (!await getOpenWebsite('/smartphone')) {
@@ -63,6 +66,14 @@ WA
         await openBackgroundPage();
     })
     .catch(e => console.error(e));
+
+function currentUserIsAdmin(): boolean {
+    return isAdmin(WA.player.uuid!);
+}
+
+function isAdmin(uuid: string): boolean {
+    return ADMIN_UUIDS.indexOf(uuid) >= 0;
+}
 
 async function getOpenWebsite(urlSuffix: string): Promise<UIWebsite | undefined> {
     return (await WA.ui.website.getAll()).find(x => x.url.endsWith(urlSuffix));
