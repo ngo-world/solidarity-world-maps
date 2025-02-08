@@ -13,6 +13,7 @@ WA
     .then(async () => await bootstrapExtra())
     .then(async () => {
         // ToDo
+        console.error("Harcoding the developer mode!");
         WA.player.state.saveVariable('developerMode', true);
         if (!WA.player.state.hasVariable("phoneNumber")) {
             const phoneNumber = getRandomPhoneNumber();
