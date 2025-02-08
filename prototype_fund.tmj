@@ -323,6 +323,30 @@
                  "width":108.666666666667,
                  "x":594.333333333333,
                  "y":266.666666666667
+                }, 
+                {
+                 "height":0,
+                 "id":23,
+                 "name":"countdownToDate",
+                 "point":true,
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":969.333333333333,
+                 "y":663.333333333333
+                }, 
+                {
+                 "height":0,
+                 "id":24,
+                 "name":"worldTime",
+                 "point":true,
+                 "rotation":0,
+                 "type":"variable",
+                 "visible":true,
+                 "width":0,
+                 "x":972,
+                 "y":615.333333333333
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -331,7 +355,7 @@
          "y":0
         }],
  "nextlayerid":66,
- "nextobjectid":22,
+ "nextobjectid":25,
  "orientation":"orthogonal",
  "properties":[
         {
