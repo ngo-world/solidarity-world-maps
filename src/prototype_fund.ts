@@ -1,7 +1,5 @@
 /// <reference types="@workadventure/iframe-api-typings" />
 
-const solidarityWorldUrl = "https://127.0.0.1:4200"
-// https://aws-load-balancer.solidarity-world.de
 
 import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
@@ -14,6 +12,8 @@ WA
     .onInit()
     .then(async () => await bootstrapExtra())
     .then(async () => {
+        // ToDo
+        WA.player.state.saveVariable('developerMode', true);
         if (!WA.player.state.hasVariable("phoneNumber")) {
             const phoneNumber = getRandomPhoneNumber();
             console.info(`Saving random phone number: ${phoneNumber}`);
@@ -81,24 +81,29 @@ async function getOpenWebsite(urlSuffix: string): Promise<UIWebsite | undefined>
 
 async function openBackgroundPage() {
     await WA.ui.website.open({
-        url: `${solidarityWorldUrl}/background`,
+        url: `${getSolidarityWorldUrl()}/background`,
         allowApi: true,
         position: {
-            vertical: "bottom",
-            horizontal: "right",
+            vertical: "top",
+            horizontal: "left",
         },
         size: {
-            height: "1px",
-            width: "1px",
+            height: "140px",
+            width: "220px",
         },
     });
 }
 
 
+function getSolidarityWorldUrl() {
+    const developerMode = WA.player.state.loadVariable('developerMode') || false;
+    return developerMode ? "https://localhost:4200" : "https://web.solidarity-world.de";
+}
+
 function openAdminDashboard() {
     WA.ui.modal.openModal({
-        title: "yes",
-        src: `${solidarityWorldUrl}/admin-dashboard`,
+        title: "adminDashboard",
+        src: `${getSolidarityWorldUrl()}/admin-dashboard`,
         allowApi: true,
         position: "center",
         allow: null
@@ -107,7 +112,7 @@ function openAdminDashboard() {
 
 async function openSmartphone() {
     await WA.ui.website.open({
-        url: `${solidarityWorldUrl}/smartphone`,
+        url: `${getSolidarityWorldUrl()}/smartphone`,
         allowApi: true,
         // ToDo
         allowPolicy: 'microphone *; screen-wake-lock *',
