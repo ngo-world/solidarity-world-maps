@@ -867,12 +867,12 @@
                         {
                          "name":"default",
                          "type":"string",
-                         "value":"{\"solidarityWorldExtensionsUrl\": \"https:\/\/web.solidarity-world.de\", \"jitsiDomain\": \"jitsi-meet.solidarity-world.de\"}"
+                         "value":"{\"solidarityWorldExtensionsUrl\": \"https:\/\/localhost:4200\", \"solidarityWorldExtensionsUrlX\": \"https:\/\/web.solidarity-world.de\", \"jitsiDomain\": \"jitsi-meet.solidarity-world.de\"}"
                         }, 
                         {
                          "name":"persist",
                          "type":"bool",
-                         "value":true
+                         "value":false
                         }],
                  "rotation":0,
                  "type":"variable",
