@@ -20,8 +20,7 @@ WA.onInit()
   .catch((e) => console.error(e));
 
 function getSolidarityWorldUrl() {
-  return (JSON.parse(WA.state.loadVariable("config") as string) as any)
-    .solidarityWorldExtensionsUrl;
+  return "https://web.solidarity-world.de";
 }
 
 async function openBackgroundPage() {
