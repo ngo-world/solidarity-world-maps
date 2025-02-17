@@ -20,8 +20,8 @@ WA.onInit()
   .catch((e) => console.error(e));
 
 function getSolidarityWorldUrl() {
-  //return "https://localhost:4200";
-  return "https://web.solidarity-world.de";
+  return "https://localhost:4200";
+  //return "https://web.solidarity-world.de";
 }
 
 async function openBackgroundPage() {
