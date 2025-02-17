@@ -4273,7 +4273,7 @@
         {
          "name":"script",
          "type":"string",
-         "value":"src\/main.ts"
+         "value":"src\/prototype_fund.ts"
         }],
  "renderorder":"right-down",
  "tiledversion":"1.11.0",
