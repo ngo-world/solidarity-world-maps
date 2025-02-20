@@ -4104,7 +4104,7 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":1.5
+                         "value":-0.5
                         }],
                  "rotation":359.626326329908,
                  "type":"area",
@@ -5805,6 +5805,19 @@
          "name":"you win",
          "spacing":0,
          "tilecount":620,
+         "tileheight":32,
+         "tilewidth":32
+        }, 
+        {
+         "columns":12,
+         "firstgid":19404,
+         "image":"tilesets\/win grafik.png",
+         "imageheight":384,
+         "imagewidth":384,
+         "margin":0,
+         "name":"win grafik",
+         "spacing":0,
+         "tilecount":144,
          "tileheight":32,
          "tilewidth":32
         }],
