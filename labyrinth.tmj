@@ -4372,6 +4372,40 @@
                  "width":63,
                  "x":288.916666666667,
                  "y":2879.75
+                }, 
+                {
+                 "height":27,
+                 "id":138,
+                 "name":"ExitToWin",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartToWin"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":1314.25,
+                 "y":3395.83333333333
+                }, 
+                {
+                 "height":50,
+                 "id":139,
+                 "name":"StartToWin",
+                 "properties":[
+                        {
+                         "name":"start",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":63,
+                 "x":1984.5,
+                 "y":3555
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -5023,7 +5057,7 @@
          "y":0
         }],
  "nextlayerid":117,
- "nextobjectid":138,
+ "nextobjectid":140,
  "orientation":"orthogonal",
  "properties":[
         {
