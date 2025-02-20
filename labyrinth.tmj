@@ -4415,14 +4415,14 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"labyrinth.wam##StartToHotel"
+                         "value":"labyrinth.wam#StartToHotel"
                         }],
                  "rotation":0,
                  "type":"area",
                  "visible":true,
                  "width":34.6667,
                  "x":447.66665,
-                 "y":1794
+                 "y":1792
                 }, 
                 {
                  "height":50,
