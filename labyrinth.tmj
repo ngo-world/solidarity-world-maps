@@ -4104,7 +4104,7 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":100
+                         "value":1
                         }],
                  "rotation":359.626326329908,
                  "type":"area",
@@ -4112,6 +4112,28 @@
                  "width":1000,
                  "x":193.326697412177,
                  "y":3022.20227278057
+                }, 
+                {
+                 "height":611.436394334602,
+                 "id":122,
+                 "name":"zoom",
+                 "properties":[
+                        {
+                         "name":"focusable",
+                         "type":"bool",
+                         "value":true
+                        }, 
+                        {
+                         "name":"zoom_margin",
+                         "type":"float",
+                         "value":1
+                        }],
+                 "rotation":359.626,
+                 "type":"area",
+                 "visible":true,
+                 "width":608.528003105835,
+                 "x":1952,
+                 "y":2276
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4763,7 +4785,7 @@
          "y":0
         }],
  "nextlayerid":117,
- "nextobjectid":122,
+ "nextobjectid":123,
  "orientation":"orthogonal",
  "properties":[
         {
