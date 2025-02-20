@@ -4126,7 +4126,7 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":1
+                         "value":5
                         }],
                  "rotation":359.626,
                  "type":"area",
@@ -4236,6 +4236,142 @@
                  "width":63,
                  "x":2063.83333333333,
                  "y":2555.66666666667
+                }, 
+                {
+                 "height":28,
+                 "id":130,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":63,
+                 "x":353.257575757576,
+                 "y":2337.98484848485
+                }, 
+                {
+                 "height":28,
+                 "id":131,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":63,
+                 "x":545,
+                 "y":2434
+                }, 
+                {
+                 "height":27,
+                 "id":132,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":706.5,
+                 "y":2468.5
+                }, 
+                {
+                 "height":27,
+                 "id":133,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":1218.25,
+                 "y":2466.5
+                }, 
+                {
+                 "height":27,
+                 "id":134,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":1095.58333333333,
+                 "y":2469.16666666667
+                }, 
+                {
+                 "height":27,
+                 "id":135,
+                 "name":"ExitToGAMEOVER",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":834.25,
+                 "y":2469.16666666667
+                }, 
+                {
+                 "height":27,
+                 "id":136,
+                 "name":"ExitToLabyrinth",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#StartGAMEOVER"
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":27.5,
+                 "x":964.25,
+                 "y":2467.5
+                }, 
+                {
+                 "height":50,
+                 "id":137,
+                 "name":"StartLabyrinth",
+                 "properties":[
+                        {
+                         "name":"start",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":63,
+                 "x":288.916666666667,
+                 "y":2879.75
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4887,7 +5023,7 @@
          "y":0
         }],
  "nextlayerid":117,
- "nextobjectid":130,
+ "nextobjectid":138,
  "orientation":"orthogonal",
  "properties":[
         {
