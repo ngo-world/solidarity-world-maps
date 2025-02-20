@@ -4092,7 +4092,7 @@
          "name":"floorLayer",
          "objects":[
                 {
-                 "height":824,
+                 "height":100,
                  "id":121,
                  "name":"zoom",
                  "properties":[
@@ -4109,9 +4109,9 @@
                  "rotation":359.626326329908,
                  "type":"area",
                  "visible":true,
-                 "width":1286,
-                 "x":139.326697412177,
-                 "y":2836.20227278057
+                 "width":100,
+                 "x":273.326697412177,
+                 "y":2986.20227278057
                 }],
          "opacity":1,
          "type":"objectgroup",
