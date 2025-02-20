@@ -4146,7 +4146,7 @@
                          "value":"labyrinth.wam#ExitToOffice"
                         }],
                  "rotation":0,
-                 "type":"",
+                 "type":"area",
                  "visible":true,
                  "width":34.6666666666667,
                  "x":671.333333333333,
