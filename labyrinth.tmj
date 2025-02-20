@@ -4325,7 +4325,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"labyrinth.wam#StartGAMEOVER"
+                         "value":"labyrinth.wam#StartLabyrinth"
                         }],
                  "rotation":0,
                  "type":"area",
