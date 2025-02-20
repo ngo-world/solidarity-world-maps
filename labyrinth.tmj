@@ -316,7 +316,7 @@
         {
          "draworder":"topdown",
          "id":113,
-         "name":"collision",
+         "name":"collisions",
          "objects":[
                 {
                  "height":39,
