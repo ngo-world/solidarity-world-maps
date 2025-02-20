@@ -4134,6 +4134,40 @@
                  "width":608.528003105835,
                  "x":1952,
                  "y":2276
+                }, 
+                {
+                 "height":30,
+                 "id":123,
+                 "name":"ExitToOffice",
+                 "properties":[
+                        {
+                         "name":"exitUrl",
+                         "type":"string",
+                         "value":"labyrinth.wam#ExitToOffice"
+                        }],
+                 "rotation":0,
+                 "type":"",
+                 "visible":true,
+                 "width":34.6666666666667,
+                 "x":671.333333333333,
+                 "y":1188
+                }, 
+                {
+                 "height":50,
+                 "id":124,
+                 "name":"start office",
+                 "properties":[
+                        {
+                         "name":"start",
+                         "type":"bool",
+                         "value":true
+                        }],
+                 "rotation":0,
+                 "type":"area",
+                 "visible":true,
+                 "width":63,
+                 "x":383,
+                 "y":1899
                 }],
          "opacity":1,
          "type":"objectgroup",
@@ -4785,7 +4819,7 @@
          "y":0
         }],
  "nextlayerid":117,
- "nextobjectid":123,
+ "nextobjectid":125,
  "orientation":"orthogonal",
  "properties":[
         {
