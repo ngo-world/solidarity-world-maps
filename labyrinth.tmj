@@ -4104,7 +4104,7 @@
                         {
                          "name":"zoom_margin",
                          "type":"float",
-                         "value":0.3
+                         "value":3
                         }],
                  "rotation":359.626326329908,
                  "type":"area",
