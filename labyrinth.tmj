@@ -4143,7 +4143,7 @@
                         {
                          "name":"exitUrl",
                          "type":"string",
-                         "value":"labyrinth.wam#ExitToOffice"
+                         "value":"labyrinth.wam#StartOffice"
                         }],
                  "rotation":0,
                  "type":"area",
@@ -4155,7 +4155,7 @@
                 {
                  "height":50,
                  "id":124,
-                 "name":"start office",
+                 "name":"StartOffice",
                  "properties":[
                         {
                          "name":"start",
