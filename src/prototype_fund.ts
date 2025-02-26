@@ -20,8 +20,12 @@ WA.onInit()
   .catch((e) => console.error(e));
 
 function getSolidarityWorldUrl() {
-  //return "https://localhost:4200";
-  return "https://web.solidarity-world.de";
+  if (WA.player.uuid === "info@davidgengenbach.de") {
+    console.error("ToDo: change back to production url!");
+    return "https://localhost:4200";
+  } else {
+    return "https://web.solidarity-world.de";
+  }
 }
 
 async function openBackgroundPage() {
@@ -47,7 +51,7 @@ async function openSmartphone() {
     allowPolicy: "microphone *; screen-wake-lock *",
     position: {
       vertical: "middle",
-      horizontal: "right",
+      horizontal: "left",
     },
     size: {
       height: "620px",
