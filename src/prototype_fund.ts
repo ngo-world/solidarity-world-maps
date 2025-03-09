@@ -3,6 +3,11 @@
 import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
+const DEVELOPMENT_UUIDS = [
+  "info@davidgengenbach.de",
+  "DemoDayPlayer1@davidgengenbach.de",
+];
+
 console.log("Script started successfully");
 
 WA.onInit()
@@ -20,7 +25,7 @@ WA.onInit()
   .catch((e) => console.error(e));
 
 function getSolidarityWorldUrl() {
-  if (WA.player.uuid === "info@davidgengenbach.de") {
+  if (DEVELOPMENT_UUIDS.indexOf(WA.player.uuid!) > -1) {
     console.error("ToDo: change back to production url!");
     return "https://localhost:4200";
   } else {
