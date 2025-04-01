@@ -86,3 +86,12 @@ If you add third party assets in your map, do not forget to:
 2. Add the tileset license text in _LICENSE.assets_.
 3. Credit the author and license of a map with the "mapCopyright" property in the custom properties of the map.
 4. Add the map license text in _LICENSE.map_.
+
+## Supported by
+
+<a href="https://prototypefund.de/">
+  <img src="assets/ptf.png" height="150"/>
+</a>
+<a href="https://www.bmbf.de/">
+  <img src="assets/bmbf_de.jpg" height="150"/>
+</a>
