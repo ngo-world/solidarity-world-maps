@@ -3,9 +3,9 @@
 import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
-const DEVELOPMENT_UUIDS = [
-  "info@davidgengenbach.de",
-  "DemoDayPlayer1@davidgengenbach.de",
+const DEVELOPMENT_UUIDS: string[] = [
+  //"info@davidgengenbach.de",
+  //"DemoDayPlayer1@davidgengenbach.de",
 ];
 
 console.log("Script started successfully");
