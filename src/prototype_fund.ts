@@ -4,7 +4,7 @@ import { UIWebsite } from "@workadventure/iframe-api-typings";
 import { bootstrapExtra } from "@workadventure/scripting-api-extra";
 
 const DEVELOPMENT_UUIDS: string[] = [
-  //"info@davidgengenbach.de",
+  "trainer@davidgengenbach.de",
   //"DemoDayPlayer1@davidgengenbach.de",
 ];
 
